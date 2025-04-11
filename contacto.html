@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Xfitness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="checkbox" id="modo-toggle" hidden>
+  <label for="modo-toggle" class="toggle-tema" aria-label="Cambiar tema"></label>
+  <div class="pagina">
+    <header class="encabezado">
+        <div class="logo">X<br><span>fitness</span></div>
+        <nav class="menu-principal">
+          <input type="checkbox" id="toggle-menu" />
+          <label for="toggle-menu" class="hamburger">&#9776;</label>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="entrenadores.html">Entrenadores</a></li>
+            <li><a href="precios.html">Precios</a></li>
+            <li class="has-submenu">
+              <a href="clases.html">Clases</a>
+              <ul class="submenu">
+                <li><a href="clases.html">Musculación</a></li>
+                <li><a href="clases.html">CrossFit</a></li>
+                <li><a href="clases.html">Yoga</a></li>
+                <li><a href="clases.html">Spinning</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+        
+      </header>
+      
+
+  <main class="formulario-contacto">
+    <h2>Contáctanos</h2>
+    <form id="formulario" novalidate>
+      <div class="campo">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required pattern="[A-Za-zÁÉÍÓÚÑáéíóúñ ]{3,}">
+        <span class="error">Ingrese al menos 3 letras.</span>
+      </div>
+
+      <div class="campo">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error">Coloque un correo válido.</span>
+      </div>
+
+      <div class="campo">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{7,15}">
+        <span class="error">Ingrese solo números (mínimo 7).</span>
+      </div>
+
+      <div class="campo">
+        <label for="motivo">Motivo</label>
+        <select id="motivo" name="motivo" required>
+          <option value="" disabled selected>Seleccione una opción</option>
+          <option value="consulta">Consulta</option>
+          <option value="inscripcion">Inscripción</option>
+          <option value="otro">Otro</option>
+        </select>
+        <span class="error">Seleccione una opción.</span>
+      </div>
+
+      <div class="campo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" required minlength="10"></textarea>
+        <span class="error">Escriba al menos 10 caracteres.</span>
+      </div>
+
+      <button type="submit">Enviar</button>
+
+      <div class="spinner" id="spinner"></div>
+
+      <div class="modal" id="modal">
+        <p>¡Formulario enviado con éxito!</p>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <div class="redes-sociales">
+      <a href="https://www.facebook.com/XfitnessCentral/">Facebook</a>
+      <a href="https://www.instagram.com/XFITNESS_Central/">Instagram</a>
+    </div>
+    <h3>¿Donde puedes encontrarnos?</h3>
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3115665.2886994495!2d-6.629208545428998!3d40.3059098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42210046079635%3A0x772eb401d142fc4e!2sXFitness!5e0!3m2!1ses!2sar!4v1744247838358!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+  <script>
+    const form = document.querySelector("form");
+    const spinner = document.querySelector(".spinner");
+    const modal = document.querySelector(".modal");
+  
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      form.classList.add("validado");
+  
+      if (!form.checkValidity()) return;
+  
+      spinner.style.display = "block";
+      modal.style.display = "block";
+  
+      setTimeout(() => {
+        spinner.style.display = "none";
+        modal.style.display = "none";
+        form.reset();
+        form.classList.remove("validado");
+      }, 3000);
+    });
+  </script>
+  </div>
+</body>
+</html>

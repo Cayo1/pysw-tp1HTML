@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Planes | Xfitness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="checkbox" id="modo-toggle" hidden>
+  <label for="modo-toggle" class="toggle-tema" aria-label="Cambiar tema"></label>
+  <div class="pagina">
+  <header class="encabezado">
+    <div class="logo">X<br><span>fitness</span></div>
+    <nav class="menu-principal">
+      <input type="checkbox" id="toggle-menu" />
+      <label for="toggle-menu" class="hamburger">&#9776;</label>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="entrenadores.html">Entrenadores</a></li>
+        <li class="has-submenu">
+          <a href="clases.html">Clases</a>
+          <ul class="submenu">
+            <li><a href="clases.html">Musculación</a></li>
+            <li><a href="clases.html">CrossFit</a></li>
+            <li><a href="clases.html">Yoga</a></li>
+            <li><a href="clases.html">Spinning</a></li>
+          </ul>
+        </li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
+       
+      </ul>
+    </nav>
+    
+  </header>
+  <main class="precios-main">
+    <h1>Compará nuestros planes</h1>
+
+    <input type="checkbox" id="precio-toggle" hidden>
+    <div class="toggle-container">
+      <input type="checkbox" id="precio-toggle" hidden>
+      <label for="precio-toggle" class="toggle-label">
+        <span class="text-mensual">Mensual</span>
+        <div class="sliderr"></div>
+        <span class="text-anual">Anual</span>
+      </label>
+    </div>
+
+    <div class="tabla-planes">
+      <div class="plan">
+        <h2>Básico</h2>
+        <p class="precio mensual">5.000 ARS</p>
+        <p class="precio anual">50.000 ARS</p>
+        <ul>
+          <li>
+            Acceso general
+            <span class="tooltip">Incluye acceso ilimitado al salón principal</span>
+          </li>
+          <li>
+            2 clases por semana
+            <span class="tooltip">Podés elegir entre yoga, spinning o musculación</span>
+          </li>
+        </ul>
+        <a href="#" class="btn">Elegir</a>
+      </div>
+
+      <div class="plan">
+        <h2>Plus</h2>
+        <p class="precio mensual">7.500 ARS</p>
+        <p class="precio anual">75.000 ARS</p>
+        <ul>
+          <li>
+            Acceso total
+            <span class="tooltip">Incluye zona de pesas, cardio y funcional</span>
+          </li>
+          <li>
+            4 clases por semana
+            <span class="tooltip">Incluye CrossFit, Yoga, Spinning y Musculación</span>
+          </li>
+        </ul>
+        <a href="#" class="btn">Elegir</a>
+      </div>
+
+      <div class="plan">
+        <h2>Premium</h2>
+        <p class="precio mensual">10.000 ARS</p>
+        <p class="precio anual">100.000 ARS</p>
+        <ul>
+          <li>
+            Acceso + Personal Trainer
+            <span class="tooltip">Incluye rutinas personalizadas con seguimiento</span>
+          </li>
+          <li>
+            Clases ilimitadas
+            <span class="tooltip">Asistí cuando y cuantas veces quieras</span>
+          </li>
+        </ul>
+        <a href="#" class="btn">Elegir</a>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+<footer>
+    <div class="redes-sociales">
+      <a href="https://www.facebook.com/XfitnessCentral/">Facebook</a>
+      <a href="https://www.instagram.com/XFITNESS_Central/">Instagram</a>
+    </div>
+    <h3>¿Donde puedes encontrarnos?</h3>
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3115665.2886994495!2d-6.629208545428998!3d40.3059098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42210046079635%3A0x772eb401d142fc4e!2sXFitness!5e0!3m2!1ses!2sar!4v1744247838358!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+</html>

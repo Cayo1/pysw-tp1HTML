@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog | Xfitness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="checkbox" id="modo-toggle" hidden>
+  <label for="modo-toggle" class="toggle-tema" aria-label="Cambiar tema"></label>
+  <div class="pagina">
+  <header class="encabezado">
+    <div class="logo">X<br><span>fitness</span></div>
+    <nav class="menu-principal">
+      <input type="checkbox" id="toggle-menu" />
+      <label for="toggle-menu" class="hamburger">&#9776;</label>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="clases.html">Clases</a></li>
+        <li><a href="precios.html">Precios</a></li>
+        <li><a href="entrenadores.html">Entrenadores</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+    <main class="blog-main">
+        <h1>Blog de Fitness</h1>
+<section class="contenedor-blog">
+  <input type="radio" name="categoria" id="todos" checked>
+  <input type="radio" name="categoria" id="fitness">
+  <input type="radio" name="categoria" id="nutricion">
+  <input type="radio" name="categoria" id="consejos">
+
+  <div class="filtros-blog">
+    <label for="todos">Todos</label>
+    <label for="fitness">Fitness</label>
+    <label for="nutricion">Nutrición</label>
+    <label for="consejos">Consejos</label>
+  </div>
+
+  <div class="articulos">
+    <article class="articulo fitness">
+        <img src="img/fitness1.jpg" alt="Rutinas para tonificar" class="img-articulo">
+      <h2>Rutinas para tonificar todo el cuerpo</h2>
+      <p>Descubrí cómo trabajar todos los grupos musculares en una sola sesión.</p>
+      <div class="tags"><span>Fitness</span></div>
+    </article>
+
+    <article class="articulo nutricion">
+        <img src="img/nutricion2.jpg" alt="Rutinas para tonificar" class="img-articulo">
+      <h2>Alimentos clave para aumentar masa muscular</h2>
+      <p>Guía completa con proteínas, carbohidratos y grasas saludables.</p>
+      <div class="tags"><span>Nutrición</span></div>
+    </article>
+
+    <article class="articulo consejos">
+        <img src="img/consejos2.jpg" alt="Rutinas para tonificar" class="img-articulo">
+      <h2>Cómo mantener la motivación al entrenar</h2>
+      <p>Estrategias prácticas para no abandonar tu plan de entrenamiento.</p>
+      <div class="tags"><span>Consejos</span></div>
+    </article>
+
+    <article class="articulo fitness">
+        <img src="img/fitness2.jpg" alt="Rutinas para tonificar" class="img-articulo">
+      <h2>Entrenamiento HIIT: Quema grasa en menos tiempo</h2>
+      <p>Alterná períodos intensos con descansos para acelerar resultados.</p>
+      <div class="tags"><span>Fitness</span></div>
+    </article>
+
+    <article class="articulo nutricion">
+        <img src="img/nutricion1.jpg" alt="Rutinas para tonificar" class="img-articulo">
+      <h2>Suplementos: ¿Cuáles valen la pena?</h2>
+      <p>Proteínas, creatina y multivitamínicos: lo que realmente necesitás.</p>
+      <div class="tags"><span>Nutrición</span></div>
+    </article>
+
+    <article class="articulo consejos">
+        <img src="img/consejos1.jpg" alt="Rutinas para tonificar" class="img-articulo">
+      <h2>Errores comunes en el gimnasio y cómo evitarlos</h2>
+      <p>Posturas incorrectas, sobreentrenamiento y falta de descanso.</p>
+      <div class="tags"><span>Consejos</span></div>
+    </article>
+  </div>
+  <section class="comentarios">
+    <h2>Comentarios</h2>
+  
+    <div class="comentario">
+      <div class="avatar"></div>
+      <p>¡Gracias por los tips! Me sirvió mucho lo de los desayunos antes de entrenar 💪</p>
+    </div>
+  
+    <div class="comentario">
+      <div class="avatar"></div>
+      <p>El artículo de HIIT fue increíble. Lo probé y terminé agotado pero feliz 😅🔥</p>
+    </div>
+  
+    <div class="comentario">
+      <div class="avatar"></div>
+      <p>¿Podrían hablar sobre cómo combinar cardio con fuerza? 🙏</p>
+    </div>
+  
+    <div class="comentario">
+      <div class="avatar"></div>
+      <p>¡Amo este blog! Súper completo. Más recetas saludables, porfa 🙌🥗</p>
+    </div>
+  
+    <div class="comentario">
+      <div class="avatar"></div>
+      <p>Me gustó mucho el de motivación, justo lo que necesitaba hoy. ¡Gracias! 💛</p>
+    </div>
+  </section>
+  
+</section>
+
+    
+  </main>
+  </div>
+</body>
+<footer>
+    <div class="redes-sociales">
+      <a href="https://www.facebook.com/XfitnessCentral/">Facebook</a>
+      <a href="https://www.instagram.com/XFITNESS_Central/">Instagram</a>
+    </div>
+    <h3>¿Donde puedes encontrarnos?</h3>
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3115665.2886994495!2d-6.629208545428998!3d40.3059098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42210046079635%3A0x772eb401d142fc4e!2sXFitness!5e0!3m2!1ses!2sar!4v1744247838358!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+</html>
