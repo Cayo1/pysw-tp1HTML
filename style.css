@@ -106,24 +106,45 @@ header {
     right: 0;
     padding: 1rem;
     display: none;
+    z-index: 9;
   }
+
   #toggle-menu:checked ~ .menu-principal ul {
     display: flex;
   }
+
   .hamburger {
     display: block;
     margin-left: auto;
+    color: white;
   }
+
   .menu-principal {
     justify-content: flex-start;
     width: 100%;
   }
+
   .redes {
     width: 100%;
     margin-top: 1rem;
     display: flex;
     justify-content: center;
   }
+
+  .submenu {
+    position: static;
+    background: transparent;
+  }
+
+  .has-submenu:hover .submenu {
+    display: none; /* lo ocultamos en móviles */
+  }
+
+  .has-submenu .submenu {
+    display: block;
+  }
+}
+
 }
 .hero {
   position: relative;
