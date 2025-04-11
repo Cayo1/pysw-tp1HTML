@@ -13,28 +13,28 @@
     <label for="modo-toggle" class="toggle-tema" aria-label="Cambiar tema"></label>
 
     <div class="pagina">
-      <header class="encabezado">
+     <header class="encabezado">
         <div class="logo">X<br><span>fitness</span></div>
-
+      
         <input type="checkbox" id="toggle-menu">
         <label for="toggle-menu" class="hamburger">&#9776;</label>
       
         <nav class="menu-principal">
           <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="entrenadores.html">Entrenadores</a></li>
-            <li><a href="precios.html">Precios</a></li>
+            <li><a href="index.html" onclick="document.getElementById('toggle-menu').checked = false;">Inicio</a></li>
+            <li><a href="entrenadores.html" onclick="document.getElementById('toggle-menu').checked = false;">Entrenadores</a></li>
+            <li><a href="precios.html" onclick="document.getElementById('toggle-menu').checked = false;">Precios</a></li>
             <li class="has-submenu">
-              <a href="clases.html">Clases</a>
+              <a href="clases.html" onclick="document.getElementById('toggle-menu').checked = false;">Clases</a>
               <ul class="submenu">
-                <li><a href="clases.html">Musculación</a></li>
-                <li><a href="clases.html">CrossFit</a></li>
-                <li><a href="clases.html">Yoga</a></li>
-                <li><a href="clases.html">Spinning</a></li>
+                <li><a href="clases.html" onclick="document.getElementById('toggle-menu').checked = false;">Musculación</a></li>
+                <li><a href="clases.html" onclick="document.getElementById('toggle-menu').checked = false;">CrossFit</a></li>
+                <li><a href="clases.html" onclick="document.getElementById('toggle-menu').checked = false;">Yoga</a></li>
+                <li><a href="clases.html" onclick="document.getElementById('toggle-menu').checked = false;">Spinning</a></li>
               </ul>
             </li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html" onclick="document.getElementById('toggle-menu').checked = false;">Contacto</a></li>
+            <li><a href="blog.html" onclick="document.getElementById('toggle-menu').checked = false;">Blog</a></li>
           </ul>
         </nav>
       
