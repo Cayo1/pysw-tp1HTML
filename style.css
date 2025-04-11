@@ -1110,9 +1110,7 @@ form:valid button[type="submit"]:active ~ .modal {
   margin-bottom: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
-/* ===== MODO OSCURO ===== */
 
-/* Solo fondo de secciones, no toques .pagina directamente para no tapar el video */
 #modo-toggle:checked ~ .pagina header,
 #modo-toggle:checked ~ .pagina nav,
 #modo-toggle:checked ~ .pagina footer,
@@ -1123,30 +1121,25 @@ form:valid button[type="submit"]:active ~ .modal {
   color: #f1f1f1;
 }
 
-/* Fondo y color de las tarjetas */
 #modo-toggle:checked ~ .pagina .card {
   background-color: #3a3a3a;
   color: #f1f1f1;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
 }
 
-/* Enlaces resaltados */
 #modo-toggle:checked ~ .pagina a {
   color: #ffcc00;
 }
 
-/* Aseguramos que el overlay del video sea visible en modo oscuro */
 #modo-toggle:checked ~ .pagina .overlay {
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
 }
 
-/* Suavidad al cambiar */
 .pagina, .pagina * {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Botón del modo oscuro */
 .toggle-tema {
   position: fixed;
   top: 10px;
@@ -1155,14 +1148,12 @@ form:valid button[type="submit"]:active ~ .modal {
   cursor: pointer;
   z-index: 1000;
 }
-/* Estilo base del botón */
 .toggle-tema::before {
   content: "🌙"; /* luna por defecto */
   font-size: 1.5rem;
   transition: all 0.3s ease;
 }
 
-/* Cuando está activado el modo oscuro, mostrar el sol */
 #modo-toggle:checked + .toggle-tema::before {
   content: "☀️";
 }#modo-toggle:checked ~ .encabezado {
