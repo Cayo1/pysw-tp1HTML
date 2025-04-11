@@ -145,7 +145,6 @@ header {
   }
 }
 
-}
 .hero {
   position: relative;
   height: 100vh;
@@ -447,11 +446,14 @@ footer {
 
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  justify-items: center; 
-  padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    padding: 2rem;
+    grid-auto-rows: minmax(200px, auto); 
+
 }
+
 .card {
   position: relative;
   overflow: hidden;
@@ -465,9 +467,11 @@ footer {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
   display: block;
   margin: 0 auto;
+  height: auto; 
+    max-height: 300px; 
 }
 
 
@@ -1118,12 +1122,14 @@ form:valid button[type="submit"]:active ~ .modal {
   color: #f1f1f1;
 }
 
+/* Fondo y color de las tarjetas */
 #modo-toggle:checked ~ .pagina .card {
   background-color: #3a3a3a;
   color: #f1f1f1;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
 }
 
+/* Enlaces resaltados */
 #modo-toggle:checked ~ .pagina a {
   color: #ffcc00;
 }
@@ -1134,10 +1140,12 @@ form:valid button[type="submit"]:active ~ .modal {
   color: #fff;
 }
 
+/* Suavidad al cambiar */
 .pagina, .pagina * {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Botón del modo oscuro */
 .toggle-tema {
   position: fixed;
   top: 10px;
@@ -1146,12 +1154,14 @@ form:valid button[type="submit"]:active ~ .modal {
   cursor: pointer;
   z-index: 1000;
 }
+/* Estilo base del botón */
 .toggle-tema::before {
   content: "🌙"; /* luna por defecto */
   font-size: 1.5rem;
   transition: all 0.3s ease;
 }
 
+/* Cuando está activado el modo oscuro, mostrar el sol */
 #modo-toggle:checked + .toggle-tema::before {
   content: "☀️";
 }#modo-toggle:checked ~ .encabezado {
